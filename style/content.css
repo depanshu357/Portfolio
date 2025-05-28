@@ -107,7 +107,11 @@
   flex-direction: column;
   justify-content: space-between;
   font-weight: 500;
+  cursor: pointer;
   /* padding: 24px 16px !important; */
+}
+.contact:hover{
+  transform: translateY(-4px);
 }
 
 
