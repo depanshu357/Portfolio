@@ -1,0 +1,162 @@
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 20px;
+  max-width: var(--maxwidth);
+  margin: 0 auto;
+}
+
+.left-content{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  height: 100%;                                                                                                        
+  gap: 16px;
+}
+
+.right-content > div, .left-content > div > div{
+  background-color: var(--primary-color);
+  border-radius: var(--box-radius);
+  padding: 12px;
+}
+
+.left-content > div > div{
+  min-height: 300px;
+}
+
+.right-content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 16px;
+}
+
+.left-top-content{
+  flex: 48;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;  
+}
+
+
+.status{
+  flex: 56;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.status  span {
+  display: block;
+  width: 100%;
+  text-align: justify;
+}
+
+.status span:nth-child(1)::before {
+  content: "Status: ";
+  font-weight: 600;
+}
+
+.status span:nth-child(1) {
+  font-size: 16px;
+}
+
+.status span:nth-child(2) {
+  font-size: 24px;
+}
+
+.adobe{
+ color: red;
+ font-weight: 600;
+}
+
+.dp{
+  flex: 33;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: url('../images/depanshu.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.left-bottom-content{
+  flex: 35;
+  display: flex;
+  flex-direction: 1;
+  gap: 16px;
+}
+
+
+.about{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  overflow-y: scroll;
+}
+
+.contact{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 500;
+  /* padding: 24px 16px !important; */
+}
+
+
+.recent-project{
+  flex: 1;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.project-descripiton{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.socials{
+  flex-basis: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* lg: 760px */
+@media screen and (max-width: 760px) {
+  .content{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .left-top-content, .left-bottom-content{
+    flex-direction: column;
+  }
+}
+
+.skill-box{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-box > span{
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 2px 4px;
+}
