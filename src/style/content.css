@@ -7,25 +7,26 @@
   margin: 0 auto;
 }
 
-.left-content{
+.left-content {
   flex: 2;
   display: flex;
   flex-direction: column;
-  height: 100%;                                                                                                        
+  height: 100%;
   gap: 16px;
 }
 
-.right-content > div, .left-content > div > div{
+.right-content > div,
+.left-content > div > div {
   background-color: var(--primary-color);
   border-radius: var(--box-radius);
   padding: 12px;
 }
 
-.left-content > div > div{
-  min-height: 300px;
+.left-content > div > div {
+  min-height: 250px;
 }
 
-.right-content{
+.right-content {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -33,22 +34,21 @@
   gap: 16px;
 }
 
-.left-top-content{
+.left-top-content {
   flex: 48;
   display: flex;
   flex-direction: row;
-  gap: 16px;  
+  gap: 16px;
 }
 
-
-.status{
+.status {
   flex: 56;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.status  span {
+.status span {
   display: block;
   width: 100%;
   text-align: justify;
@@ -67,33 +67,32 @@
   font-size: 24px;
 }
 
-.adobe{
- color: red;
- font-weight: 600;
+.adobe {
+  color: red;
+  font-weight: 600;
 }
 
-.dp{
+.dp {
   flex: 33;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background: url('../assets/images/depanshu.png');
+  background: url("../assets/images/depanshu.png");
   background-position: center;
   background-size: cover;
 }
 
-.left-bottom-content{
+.left-bottom-content {
   flex: 35;
   display: flex;
   flex-direction: 1;
   gap: 16px;
 }
 
-
-.about{
-  flex:1;
+.about {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,8 +100,8 @@
   overflow-y: scroll;
 }
 
-.contact{
-  flex:1;
+.contact {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -110,12 +109,11 @@
   cursor: pointer;
   /* padding: 24px 16px !important; */
 }
-.contact:hover{
+.contact:hover {
   transform: translateY(-4px);
 }
 
-
-.recent-project{
+.recent-project {
   flex: 1;
   min-height: 500px;
   display: flex;
@@ -125,14 +123,14 @@
   overflow-y: scroll;
 }
 
-.project-descripiton{
+.project-descripiton {
   display: flex;
   flex-direction: column;
   gap: 8px;
   justify-content: space-between;
 }
 
-.socials{
+.socials {
   flex-basis: 60px;
   display: flex;
   flex-direction: row;
@@ -142,36 +140,36 @@
 
 /* lg: 760px */
 @media screen and (max-width: 760px) {
-  .content{
+  .content {
     flex-direction: column;
   }
 }
 
 @media screen and (max-width: 450px) {
-  .left-top-content, .left-bottom-content{
+  .left-top-content,
+  .left-bottom-content {
     flex-direction: column;
   }
 }
 
-.skill-box{
+.skill-box {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
-.skill-box > span{
+.skill-box > span {
   border: 2px solid black;
   border-radius: 8px;
   padding: 2px 4px;
 }
 
-
 /* for js use */
 
-.modified-left-content{
-  flex:1;
+.modified-left-content {
+  flex: 1;
 }
-.modified-right-content{
+.modified-right-content {
   flex: 2;
 }
 
@@ -192,6 +190,10 @@
   /* Set --collapse-from to the element's current height if needed */
 }
 
-.flex-4{
+.flex-4 {
   flex: 4;
+}
+
+.selected {
+  background-color: rgba(113, 113, 113, 0.216) !important;
 }

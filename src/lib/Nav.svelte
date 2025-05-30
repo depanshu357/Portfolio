@@ -3,14 +3,14 @@
 
   function onContactClick() {
     state.variant = "contact";
-    let rightBox = document.querySelector('.right-content')
-    rightBox.classList.add('flex-4')
+    let rightBox = document.querySelector(".right-content");
+    rightBox.classList.add("flex-4");
   }
 
   function onHomeClick() {
     state.variant = "default";
-    let rightBox = document.querySelector('.right-content')
-    rightBox.classList.remove('flex-4')
+    let rightBox = document.querySelector(".right-content");
+    rightBox.classList.remove("flex-4");
   }
 
   function onResumeClick() {
@@ -20,11 +20,20 @@
     );
   }
 
+  function onAboutClick() {
+    onHomeClick();
+    state.variant = "about";
+    let rightBox = document.querySelector(".right-content");
+    rightBox.classList.add("flex-4");
+    let statusBox = document.querySelector(".status");
+    statusBox.classList.add("min-h-250");
+  }
+
   function onProjectClick() {
     onHomeClick();
-    state.variant = "projects";    
-    let rightBox = document.querySelector('.right-content')
-    rightBox.classList.add('flex-4')
+    state.variant = "projects";
+    let rightBox = document.querySelector(".right-content");
+    rightBox.classList.add("flex-4");
   }
 </script>
 
@@ -38,11 +47,9 @@
     </section>
     <section class="default-options">
       <button class="option" onclick={onHomeClick}>Home</button>
-      <button class="option">About</button>
+      <button class="option" onclick={onAboutClick}>About</button>
       <button class="option" onclick={onProjectClick}>Projects</button>
-      <button class="option" onclick={onContactClick}
-        >Contact</button
-      >
+      <button class="option" onclick={onContactClick}>Contact</button>
       <button class="option" onclick={onResumeClick}>Resume</button>
     </section>
   </div>
