@@ -20,8 +20,11 @@
     gap: 8px;
 }
 
-.default-options > a{
+.default-options > button{
+    border: 0;
+    background: none;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .open-icon {
@@ -40,7 +43,8 @@
     }
 }
 
-.open-icon > span{
+.open-icon > button{
+    
     display: block;
     width: 16px;
     height: 3px;

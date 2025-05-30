@@ -79,7 +79,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background: url('../images/depanshu.png');
+  background: url('../assets/images/depanshu.png');
   background-position: center;
   background-size: cover;
 }
@@ -163,4 +163,35 @@
   border: 2px solid black;
   border-radius: 8px;
   padding: 2px 4px;
+}
+
+
+/* for js use */
+
+.modified-left-content{
+  flex:1;
+}
+.modified-right-content{
+  flex: 2;
+}
+
+@keyframes collapseHeight {
+  from {
+    height: var(--collapse-from, 100px);
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.collapse {
+  overflow: hidden;
+  animation: collapseHeight 0.4s ease forwards;
+  /* Set --collapse-from to the element's current height if needed */
+}
+
+.flex-4{
+  flex: 4;
 }

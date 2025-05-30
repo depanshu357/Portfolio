@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -55,144 +55,15 @@
     />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="global.css" />
-    <link rel="stylesheet" href="style/nav.css" />
-    <link rel="stylesheet" href="style/content.css" />
+    <link rel="stylesheet" href="/global.css" />
+    <link rel="stylesheet" href="/style/nav.css" />
+    <link rel="stylesheet" href="/style/content.css" />
 
     <!-- JavaScript -->
-    <script src="index.js" defer></script>
+    
   </head>
-
-  <body class="body">
-    <nav class="nav">
-      <div class="name">Depanshu Sahu</div>
-      <div class="options">
-        <section class="open-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </section>
-        <section class="default-options">
-          <a href="index.html" class="option">Home</a>
-          <a href="about.html" class="option">About</a>
-          <a href="projects.html" class="option">Projects</a>
-          <a href="contact.html" class="option">Contact</a>
-          <a href="./Depanshu_Sahu.pdf" class="option">Resume</a>
-        </section>
-      </div>
-    </nav>
-    <main class="content">
-      <section class="left-content">
-        <div class="left-top-content">
-          <div class="status">
-            <div style="display: flex; flex-direction: row-reverse">
-              <img src="./images/flower.png" width="44px" />
-            </div>
-            <div>
-              <span>Currenly Employed</span>
-              <span
-                >Member of Technical Staff <br />
-                <span class="adobe">Adobe</span></span
-              >
-            </div>
-          </div>
-          <div class="dp">
-            <!-- <img src="./images/depanshu.png" alt="Depanshu Sahu" width="200px"/> -->
-          </div>
-        </div>
-        <div class="left-bottom-content">
-          <div class="about">
-            <span><img src="./images/circle.png" width="24px" /></span>
-            <span
-              >Hi! I'm a B.Tech graduate in Computer Science and Engineering
-              from IIT Kanpur, with 4 years of experience in full-stack
-              development. I’m currently expanding my skills in Machine Learning
-              and Deep Learning, and have a strong interest in system design and
-              database architecture.</span
-            >
-          </div>
-          <div class="contact">
-            <div style="display: flex; justify-content: space-between">
-              <span
-                >Have some <br />
-                questions?</span
-              >
-              <span><img src="./images/arrow.png" width="24px" /></span>
-            </div>
-            <div style="font-size: 32px">Contact me</div>
-          </div>
-        </div>
-      </section>
-      <section class="right-content">
-        <div class="recent-project">
-          <section
-            style="
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            "
-          >
-            <span style="font-weight: 500">Recent Project</span>
-            <span
-              ><img src="./images/arrow.png" alt="arrow" width="24px"
-            /></span>
-          </section>
-
-          <div>
-            <img
-              src="./images/projects/sip_portal.png"
-              alt="sip_portal"
-              width="100%"
-              style="border-radius: 12px"
-            />
-          </div>
-          <div class="project-descripiton">
-            <div
-              style="
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-              "
-            >
-              <span style="font-weight: bold">SIP Portal </span>
-              <span
-                style="
-                  display: flex;
-                  align-items: center;
-                  border: 2px solid black;
-                  border-radius: 8px;
-                  padding: 2px 4px;
-                "
-                ><a href="https://sipp.iitk.ac.in/sign-in" target="_blank"
-                  >Live Demo</a
-                ></span
-              >
-            </div>
-            <div>
-              Developed an open-source internship application portal for IIT
-              Kanpur's Startup Internship Program. Implemented authentication
-              with Auth.js, email verification, and deployed on Red Hat Linux
-              using Nginx. Designed the UI with Shadcn and Tailwind CSS,
-              ensuring type safety with TypeScript and enabling file
-              upload/download functionalities.
-            </div>
-            <div class="skill-box">
-              <span>Next.js</span>
-              <span>Golang</span>
-              <span>PostgreSQL</span>
-              <span>nginx</span>
-              <span>Red-Hat</span>
-            </div>
-          </div>
-        </div>
-        <div class="socials">
-          <a href="https://github.com/depanshu357">Github</a>
-          <a href="https://www.linkedin.com/in/depanshu-sahu-429358230/"
-            >Linkedin</a
-          >
-          <a href="https://x.com/DepanshuSahu3">Twitter</a>
-        </div>
-      </section>
-    </main>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
